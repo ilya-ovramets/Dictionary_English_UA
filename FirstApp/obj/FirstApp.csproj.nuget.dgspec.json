@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\FirstApp.csproj": {}
+    "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\FirstApp.csproj": {}
   },
   "projects": {
-    "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\FirstApp.csproj": {
+    "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\FirstApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\FirstApp.csproj",
+        "projectUniqueName": "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\FirstApp.csproj",
         "projectName": "FirstApp",
-        "projectPath": "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\FirstApp.csproj",
+        "projectPath": "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\FirstApp.csproj",
         "packagesPath": "C:\\Users\\Miron\\.nuget\\packages\\",
-        "outputPath": "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\obj\\",
+        "outputPath": "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

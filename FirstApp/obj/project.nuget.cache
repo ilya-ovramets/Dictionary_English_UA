@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GOroUNk4aHEcfeC6UO9aoPgAqVklA3TDLfiNt5HDzb1fdjL2D/qTjQizyw1R1chpQhFR4LTnzMCeMdErT+18sg==",
+  "dgSpecHash": "Rc9VpzWjqrk3URz/CyI2t7aVtyVKErGtTDqGRb8dresMJNB+gxQf6luOMCKPpN3sSP7EGI/knC2/Aje21O+GpA==",
   "success": true,
-  "projectFilePath": "B:\\University\\Practics\\2022_Ovramets_I_V_Lab_2\\FirstApp\\FirstApp.csproj",
+  "projectFilePath": "B:\\University\\Practics\\Dictionary_English_UA\\FirstApp\\FirstApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Miron\\.nuget\\packages\\adamslair.winforms\\1.1.18\\adamslair.winforms.1.1.18.nupkg.sha512",
     "C:\\Users\\Miron\\.nuget\\packages\\adamslair.winforms.popupcontrol\\1.0.1\\adamslair.winforms.popupcontrol.1.0.1.nupkg.sha512",

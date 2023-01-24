@@ -41,7 +41,6 @@ namespace FirstApp.ControllPanel
             this.StrongWords = new FirstApp.Custom.SmoothProgressBar();
             this.MiddleWords = new FirstApp.Custom.SmoothProgressBar();
             this.WeakWords = new FirstApp.Custom.SmoothProgressBar();
-            this.DeleteButton = new FirstApp.Custom.RoundButton();
             this.DictionDGV = new System.Windows.Forms.DataGridView();
             this.wordBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.UserNameTB = new System.Windows.Forms.TextBox();
@@ -74,7 +73,6 @@ namespace FirstApp.ControllPanel
             this.UpPanel.Controls.Add(this.StrongWords);
             this.UpPanel.Controls.Add(this.MiddleWords);
             this.UpPanel.Controls.Add(this.WeakWords);
-            this.UpPanel.Controls.Add(this.DeleteButton);
             this.UpPanel.Controls.Add(this.DictionDGV);
             this.UpPanel.Location = new System.Drawing.Point(0, 63);
             this.UpPanel.Name = "UpPanel";
@@ -146,25 +144,6 @@ namespace FirstApp.ControllPanel
             this.WeakWords.Size = new System.Drawing.Size(216, 59);
             this.WeakWords.TabIndex = 2;
             this.WeakWords.Value = 0;
-            // 
-            // DeleteButton
-            // 
-            this.DeleteButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.DeleteButton.BackColor2 = System.Drawing.Color.Silver;
-            this.DeleteButton.ButtonBorderColor = System.Drawing.Color.Black;
-            this.DeleteButton.ButtonHighlightColor = System.Drawing.Color.Orange;
-            this.DeleteButton.ButtonHighlightColor2 = System.Drawing.Color.OrangeRed;
-            this.DeleteButton.ButtonHighlightForeColor = System.Drawing.Color.Black;
-            this.DeleteButton.ButtonPressedColor = System.Drawing.Color.Red;
-            this.DeleteButton.ButtonPressedColor2 = System.Drawing.Color.Maroon;
-            this.DeleteButton.ButtonPressedForeColor = System.Drawing.Color.White;
-            this.DeleteButton.ButtonRoundRadius = 30;
-            this.DeleteButton.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DeleteButton.Location = new System.Drawing.Point(893, 26);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(192, 57);
-            this.DeleteButton.TabIndex = 1;
-            this.DeleteButton.Text = "Delete";
             // 
             // DictionDGV
             // 
@@ -305,7 +284,6 @@ namespace FirstApp.ControllPanel
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn positionIdDataGridViewTextBoxColumn;
         private DataGridView DictionDGV;
-        private RoundButton DeleteButton;
         private TextBox UserNameTB;
         private TextBox PasswordTB;
         private Label label2;
