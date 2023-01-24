@@ -1,0 +1,13 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using FirstApp.DataBase;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata;
+global using System.Drawing.Drawing2D;
+global using FirstApp.ControllPanel;
+global using FirstApp.Custom;
+global using System.Threading;
+global using System.IO;
