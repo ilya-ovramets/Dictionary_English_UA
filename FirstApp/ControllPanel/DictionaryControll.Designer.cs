@@ -31,17 +31,15 @@ namespace FirstApp.ControllPanel
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.UpPanel = new System.Windows.Forms.Panel();
+            this.DictionDGV = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.StrongWords = new FirstApp.Custom.SmoothProgressBar();
             this.MiddleWords = new FirstApp.Custom.SmoothProgressBar();
             this.WeakWords = new FirstApp.Custom.SmoothProgressBar();
-            this.DictionDGV = new System.Windows.Forms.DataGridView();
             this.wordBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.UserNameTB = new System.Windows.Forms.TextBox();
             this.PasswordTB = new System.Windows.Forms.TextBox();
@@ -67,17 +65,31 @@ namespace FirstApp.ControllPanel
             // UpPanel
             // 
             this.UpPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UpPanel.Controls.Add(this.DictionDGV);
             this.UpPanel.Controls.Add(this.label6);
             this.UpPanel.Controls.Add(this.label5);
             this.UpPanel.Controls.Add(this.label4);
             this.UpPanel.Controls.Add(this.StrongWords);
             this.UpPanel.Controls.Add(this.MiddleWords);
             this.UpPanel.Controls.Add(this.WeakWords);
-            this.UpPanel.Controls.Add(this.DictionDGV);
             this.UpPanel.Location = new System.Drawing.Point(0, 63);
             this.UpPanel.Name = "UpPanel";
             this.UpPanel.Size = new System.Drawing.Size(1143, 602);
             this.UpPanel.TabIndex = 2;
+            // 
+            // DictionDGV
+            // 
+            this.DictionDGV.AllowUserToAddRows = false;
+            this.DictionDGV.AllowUserToDeleteRows = false;
+            this.DictionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.DictionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DictionDGV.Location = new System.Drawing.Point(48, 51);
+            this.DictionDGV.Name = "DictionDGV";
+            this.DictionDGV.ReadOnly = true;
+            this.DictionDGV.RowHeadersWidth = 45;
+            this.DictionDGV.RowTemplate.Height = 27;
+            this.DictionDGV.Size = new System.Drawing.Size(781, 455);
+            this.DictionDGV.TabIndex = 10;
             // 
             // label6
             // 
@@ -144,30 +156,6 @@ namespace FirstApp.ControllPanel
             this.WeakWords.Size = new System.Drawing.Size(216, 59);
             this.WeakWords.TabIndex = 2;
             this.WeakWords.Value = 0;
-            // 
-            // DictionDGV
-            // 
-            this.DictionDGV.AllowUserToAddRows = false;
-            this.DictionDGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DictionDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DictionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DictionDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DictionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DictionDGV.Location = new System.Drawing.Point(27, 26);
-            this.DictionDGV.Name = "DictionDGV";
-            this.DictionDGV.ReadOnly = true;
-            this.DictionDGV.RowHeadersWidth = 45;
-            this.DictionDGV.RowTemplate.Height = 27;
-            this.DictionDGV.Size = new System.Drawing.Size(848, 544);
-            this.DictionDGV.TabIndex = 0;
             // 
             // wordBindingSource
             // 
@@ -283,7 +271,6 @@ namespace FirstApp.ControllPanel
         private DataGridViewTextBoxColumn corpEmailDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn positionIdDataGridViewTextBoxColumn;
-        private DataGridView DictionDGV;
         private TextBox UserNameTB;
         private TextBox PasswordTB;
         private Label label2;
@@ -298,5 +285,6 @@ namespace FirstApp.ControllPanel
         private RoundButton roundButton2;
         private DataGridViewTextBoxColumn wordsdictionariesDataGridViewTextBoxColumn;
         private BindingSource wordBindingSource;
+        private DataGridView DictionDGV;
     }
 }

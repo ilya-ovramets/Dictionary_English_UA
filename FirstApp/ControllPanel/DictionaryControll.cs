@@ -36,7 +36,8 @@ namespace FirstApp.ControllPanel
                                 select new ModelData { Word = word.Word1, translate = word.Translate, transcript = word.Transcript, Progres = k_word.Progres };
 
                     DictionDGV.AutoSize = true;
-
+                    DictionDGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+                    DictionDGV.DefaultCellStyle.Font = new Font(familyName: "Tahoma", emSize: 15);
                     var bindingList = new BindingList<ModelData>(Words.ToList());
                     DictionDGV.DataSource = bindingList;
                     

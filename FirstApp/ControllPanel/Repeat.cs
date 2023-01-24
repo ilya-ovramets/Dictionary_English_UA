@@ -72,6 +72,7 @@ namespace FirstApp.ControllPanel
                         {
                             curent.Progres += 10;
                         }
+                        MessageBox.Show("Good job");
                         db.SaveChanges();
                     }
                     else
@@ -86,7 +87,7 @@ namespace FirstApp.ControllPanel
                             curent.Progres -= 5;
                         }
                         db.SaveChanges();
-                        MessageBox.Show($"{curent_word.Word1} \r\n {curent_word.Translate} \r\n {curent_word.Transcript}");
+                        MessageBox.Show($"Wrong answer {curent_word.Word1} \r\n {curent_word.Translate} \r\n {curent_word.Transcript}");
                     }
                 }
             }
