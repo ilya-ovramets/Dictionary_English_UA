@@ -100,15 +100,20 @@ namespace FirstApp.ControllPanel
                             Configure.Password = item.UserPassword;
                             Configure.Dictionary_id = item.DictionaryId;
                             MessageBox.Show($"{Configure.UserName}  {Configure.Password}  {Configure.Dictionary_id}");
-                            break;
+                            FillDGV();
+                            CalculateWordsLevel();
+                            LoadWordsLevelKnow();
+                            return;
                         }
-
-                        MessageBox.Show("Wrong user name or password!");
-                        return;
+                        else
+                        {
+                            continue;
+                        }
                     }
+                    MessageBox.Show("Wrong user name or password!");
+                    return;
                 }
-                CalculateWordsLevel();
-                LoadWordsLevelKnow();
+                
             }
             catch (Exception ex)
             {
