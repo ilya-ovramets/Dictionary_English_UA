@@ -61,7 +61,7 @@ namespace FirstApp.ControllPanel
             {
                 using (DictionaryContext db = new DictionaryContext())
                 {
-                    if (AnswerBox.Text == curent_word.Word1)
+                    if (AnswerBox.Text.Trim().ToLower() == curent_word.Word1.Trim().ToLower())
                     {
                         var curent = db.Wordsdictionaries.Find(wordsdictionary.WordDictionaryId);
                         if (curent.Progres + 10 >= 100)
@@ -148,49 +148,7 @@ namespace FirstApp.ControllPanel
 
 
 
-        // For Add New Word to dictionary
-
-
-        //private void ReadNewWord()
-        //{
-        //    var list_word = ErrorLogBox.Text.Split("\r\n");
-        //    List<List<string>> words = new List<List<string>>();
-        //    foreach (var item in list_word)
-        //    {
-        //        var items = item.Split(" ");
-        //        List<string> strings = new List<string>();
-        //        int end = items.Length - 2;
-        //        strings.Add(items[0]);
-        //        strings.Add(string.Join(" ", items[1..end]));
-        //        strings.Add(string.Join(" ", items[end..items.Length]));
-        //        words.Add(strings);
-        //    }
-        //    SaveWord(words);
-        //}
-
-
-        //private void SaveWord(List<List<string>> words)
-        //{
-        //    try
-        //    {
-        //        using (DictionaryContext db = new DictionaryContext())
-        //        {
-        //            foreach (var item in words)
-        //            {
-        //                Word word = new Word();
-        //                word.Word1 = item[0];
-        //                word.Translate = item[1];
-        //                word.Transcript = item[2];
-        //                db.Words.Add(word);
-        //            }
-        //            db.SaveChanges();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //}
+        
 
         private void roundButton1_Click(object sender, EventArgs e)
         {

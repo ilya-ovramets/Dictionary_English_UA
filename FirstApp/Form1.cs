@@ -59,6 +59,10 @@
             addUserControl(furnitureControll);
         }
 
+        
+
+
+
         private bool CheckWordAwailable()
         {
             try
